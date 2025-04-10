@@ -1,9 +1,6 @@
-
 import React from 'react';
-import { GraduationCap, Calendar, Award, Certificate } from 'lucide-react';
+import { GraduationCap, Calendar, Award } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { Badge } from '@/components/ui/badge';
 
 const EducationSection = () => {
   const educationItems = [
@@ -20,62 +17,6 @@ const EducationSection = () => {
       period: "2013 - 2016",
       location: "Ranchi, India",
       description: "Completed undergraduate studies with a focus on information technology fundamentals, programming, and systems analysis."
-    }
-  ];
-
-  const certificates = [
-    {
-      name: "Data Analysis with Python",
-      issuer: "Coursera",
-      date: "Oct 2018",
-      credentialId: "BGWWDNAJKR6Q",
-      skills: ["Relational Databases", "Python", "Data Analysis"],
-      logo: "Coursera"
-    },
-    {
-      name: "Databases and SQL for Data Science",
-      issuer: "Coursera",
-      date: "Oct 2018",
-      skills: ["Relational Databases", "SQL"],
-      logo: "Coursera"
-    },
-    {
-      name: "A Crash Course in Data Science",
-      issuer: "Coursera",
-      date: "Sep 2018",
-      credentialId: "9CAC4G9LFELC",
-      skills: ["Data Science"],
-      logo: "Coursera"
-    },
-    {
-      name: "REDHAT CERTIFIED SPECIALIST IN ANSIBLE AUTOMATION",
-      issuer: "Red Hat",
-      date: "Jun 2018 - Jun 2021 (Expired)",
-      credentialId: "180-113-417",
-      skills: ["Ansible", "Automation", "DevOps"],
-      logo: "Red Hat"
-    },
-    {
-      name: "RHCSA",
-      issuer: "Red Hat",
-      date: "Jun 2018 - Jun 2021 (Expired)",
-      credentialId: "180-113-417",
-      skills: ["Linux Administration", "Shell Scripting"],
-      logo: "Red Hat"
-    },
-    {
-      name: "Data Visualization with Python",
-      issuer: "Coursera",
-      date: "2018",
-      skills: ["Data Visualization", "Python"],
-      logo: "Coursera"
-    },
-    {
-      name: "Machine Learning With Python",
-      issuer: "Coursera",
-      date: "2018",
-      skills: ["Machine Learning", "Python", "AI"],
-      logo: "Coursera"
     }
   ];
 
@@ -139,44 +80,6 @@ const EducationSection = () => {
                 </div>
               </div>
             </Card>
-          </div>
-        </div>
-
-        <div className="mt-16 max-w-4xl mx-auto">
-          <h3 className="text-2xl font-bold text-portfolio-dark mb-6 flex items-center">
-            <Certificate className="mr-2 text-portfolio-primary" size={24} />
-            Certifications
-          </h3>
-          
-          <div className="grid md:grid-cols-2 gap-6">
-            {certificates.map((cert, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-lg border border-gray-200 hover:shadow-md transition-all duration-300"
-              >
-                <div className="p-5">
-                  <div className="flex justify-between items-start">
-                    <h4 className="font-semibold text-portfolio-primary text-lg">{cert.name}</h4>
-                    <span className={`text-sm px-2 py-1 rounded ${cert.logo === 'Red Hat' ? 'bg-red-100 text-red-700' : 'bg-blue-100 text-blue-700'}`}>
-                      {cert.logo}
-                    </span>
-                  </div>
-                  <p className="text-gray-700 mt-1">Issued by {cert.issuer}</p>
-                  <p className="text-gray-600 text-sm mt-1">{cert.date}</p>
-                  {cert.credentialId && (
-                    <p className="text-gray-500 text-sm mt-1">Credential ID: {cert.credentialId}</p>
-                  )}
-                  
-                  <div className="mt-3 flex flex-wrap gap-2">
-                    {cert.skills.map((skill, idx) => (
-                      <Badge key={idx} variant="secondary" className="bg-gray-100 text-gray-700">
-                        {skill}
-                      </Badge>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </div>
