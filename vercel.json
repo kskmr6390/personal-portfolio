@@ -20,11 +20,20 @@
       ]
     },
     {
-      "source": "/(.*).js",
+      "source": "/personal-portfolio/assets/(.*).js",
       "headers": [
         {
           "key": "Content-Type",
           "value": "application/javascript"
+        }
+      ]
+    },
+    {
+      "source": "/personal-portfolio/assets/(.*).css",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/css"
         }
       ]
     }
