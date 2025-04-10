@@ -1,6 +1,6 @@
-
 import React from 'react';
 import { GraduationCap, Calendar, Award } from 'lucide-react';
+import { Card, CardContent } from '@/components/ui/card';
 
 const EducationSection = () => {
   const educationItems = [
@@ -60,25 +60,47 @@ const EducationSection = () => {
             Achievements
           </h3>
           
-          <div className="grid md:grid-cols-2 gap-6">
-            {[
-              {
-                name: "Developer of the Month (Aug 2023)",
-                description: "Optimized AWS infrastructure, reducing operational costs"
-              },
-              {
-                name: "Go Beyond Award",
-                description: "Recognized for innovation and contributions to Qatalyst"
-              }
-            ].map((achievement, index) => (
-              <div 
-                key={index} 
-                className="bg-white p-5 rounded-lg border border-gray-200 hover:shadow-md transition-shadow duration-300"
-              >
-                <h4 className="font-semibold text-portfolio-primary">{achievement.name}</h4>
-                <p className="text-gray-600 mt-1">{achievement.description}</p>
+          <div className="grid md:grid-cols-1 gap-6">
+            <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
+              <div className="grid md:grid-cols-2 gap-4">
+                <CardContent className="p-6">
+                  <h4 className="font-semibold text-xl text-portfolio-primary mb-4">Developer of the Month Award</h4>
+                  <p className="text-gray-600 mb-3">Recognized for balancing demanding priorities from Decode and Affect Labs projects, making quick decisions, and liaising with stakeholders across various functions to ensure smooth delivery.</p>
+                  <div className="text-gray-500 text-sm">
+                    <p>Nominated by Shenbakesh Kishore</p>
+                    <p className="mt-2">Awarded by Soumitra Ghosh, VP Engineering</p>
+                  </div>
+                </CardContent>
+                <div className="relative h-full min-h-[250px] md:min-h-0 bg-blue-900">
+                  <img 
+                    src="/lovable-uploads/2672f22d-a847-4146-88d4-3004a695a3c9.png" 
+                    alt="Developer of the Month Certificate" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
-            ))}
+            </Card>
+            
+            <div className="grid md:grid-cols-2 gap-6 mt-6">
+              {[
+                {
+                  name: "Developer of the Month (Aug 2023)",
+                  description: "Optimized AWS infrastructure, reducing operational costs"
+                },
+                {
+                  name: "Go Beyond Award",
+                  description: "Recognized for innovation and contributions to Qatalyst"
+                }
+              ].map((achievement, index) => (
+                <div 
+                  key={index} 
+                  className="bg-white p-5 rounded-lg border border-gray-200 hover:shadow-md transition-shadow duration-300"
+                >
+                  <h4 className="font-semibold text-portfolio-primary">{achievement.name}</h4>
+                  <p className="text-gray-600 mt-1">{achievement.description}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

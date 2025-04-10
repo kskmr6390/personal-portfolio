@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Card } from '@/components/ui/card';
 
 const AboutSection = () => {
   return (
@@ -21,8 +22,9 @@ const AboutSection = () => {
               I have a proven track record in leading teams, optimizing cloud infrastructure, and building scalable systems.
             </p>
             <p className="text-gray-600">
-              I'm passionate about driving innovation through LLM-powered copilots and cloud-native solutions, 
-              continuously expanding my knowledge to stay at the forefront of technological advancements.
+              I excel at balancing demanding priorities across multiple projects, making quick decisions, and 
+              liaising with stakeholders to ensure smooth delivery. I'm passionate about driving innovation through 
+              LLM-powered copilots and cloud-native solutions.
             </p>
           </div>
           
