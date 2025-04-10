@@ -1,13 +1,17 @@
 {
   "rewrites": [
     {
+      "source": "/personal-portfolio/(.*)",
+      "destination": "/personal-portfolio/index.html"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }
   ],
   "headers": [
     {
-      "source": "/assets/(.*)",
+      "source": "/personal-portfolio/assets/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
