@@ -5,39 +5,50 @@ import { Briefcase, Calendar } from 'lucide-react';
 const ExperienceSection = () => {
   const experiences = [
     {
-      title: "Data Analyst",
-      company: "HashedIn by Deloitte",
-      period: "Jan 2021 - Present",
-      location: "Bengaluru, Karnataka, India",
+      title: "Senior Backend Engineer",
+      company: "Entropik Tech",
+      period: "Dec 2022 - Present",
+      location: "Abu Dhabi, UAE",
       description: [
-        "Analyzed large datasets to extract actionable insights for client applications",
-        "Developed and maintained data pipelines for efficient data processing",
-        "Collaborated with cross-functional teams to implement data-driven solutions",
-        "Utilized Python, SQL, and data visualization tools to present findings effectively"
+        "Led the development of AI-powered Integrated Market Research Platforms, incorporating LLM-powered copilots, reducing project delivery time by 30%",
+        "Optimized cloud infrastructure using AWS Lambda & Step Functions, achieving 20% cost savings on cloud expenses",
+        "Ensured GDPR compliance and secure data processing across all research and survey platforms",
+        "Integrated Stripe for subscription-based payments, improving transaction efficiency and financial reporting",
+        "Mentored 4 junior engineers, fostering code quality, system design, and AWS best practices"
       ]
     },
     {
-      title: "Associate Software Engineer",
-      company: "Virtuoso InfoTech",
-      period: "Jun 2019 - Dec 2020",
-      location: "Bengaluru, Karnataka, India",
+      title: "Senior Backend Engineer",
+      company: "Entropik Tech",
+      period: "May 2022 - Dec 2022",
+      location: "Bangalore, India",
       description: [
-        "Developed and maintained multiple software applications using Java/Spring framework",
-        "Implemented RESTful APIs and microservices architecture",
-        "Collaborated with UX designers to implement user-friendly interfaces",
-        "Participated in code reviews and implemented best practices"
+        "Designed and built Qatalyst, an AI-powered marketing survey and insights platform",
+        "Increased user engagement by 20% and generated $50,000 in additional revenue within the first quarter of launch",
+        "Optimized backend systems for scalability and performance"
       ]
     },
     {
-      title: "Software Development Intern",
-      company: "Tech Solutions",
-      period: "Jan 2019 - May 2019",
-      location: "Bengaluru, Karnataka, India",
+      title: "Backend Engineer",
+      company: "Entropik Tech",
+      period: "Aug 2021 - May 2022",
+      location: "Bangalore, India",
       description: [
-        "Assisted in developing web applications using HTML, CSS, and JavaScript",
-        "Learned and applied software development methodologies",
-        "Contributed to team projects under senior developer guidance",
-        "Gained exposure to database management and version control systems"
+        "Developed Facial Recognition APIs for emotion insights, enhancing analytics for 10K+ enterprise users",
+        "Built a multi-tenant SaaS platform supporting 10K+ concurrent transactions with SSL and data encryption",
+        "Integrated AWS services (ECS, SQS, Step Functions, Lambda, Pub/Sub), reducing processing time by 95%",
+        "Contributed to a $1M ARR increase by enabling third-party integrations"
+      ]
+    },
+    {
+      title: "Associate Software Development Engineer",
+      company: "Teamlease",
+      period: "Jul 2019 - Aug 2021",
+      location: "Bangalore, India",
+      description: [
+        "Developed Bot APIs to automate customer service workflows, reducing email queue times by 60%",
+        "Enhanced TL-Connect: DWS modules (attendance, payroll) using Java & Spring Boot",
+        "Standardized codebases using OOP & SOLID principles, reducing errors by 20%"
       ]
     }
   ];
@@ -50,7 +61,7 @@ const ExperienceSection = () => {
         </h2>
         
         <p className="text-gray-600 text-center max-w-3xl mx-auto mb-12">
-          My professional journey has equipped me with a diverse skill set and experience across different domains in software development.
+          My professional journey has equipped me with expertise in backend development, cloud infrastructure, and AI-powered solutions.
         </p>
         
         <div className="space-y-8">

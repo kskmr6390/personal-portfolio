@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowDown, Linkedin, Github, Mail } from 'lucide-react';
+import { ArrowDown, Linkedin, Github, Mail, Phone } from 'lucide-react';
 
 const HeroSection = () => {
   return (
@@ -19,12 +19,12 @@ const HeroSection = () => {
         </h1>
         
         <h2 className="text-xl md:text-2xl mt-4 text-portfolio-primary animate-fade-in" style={{ animationDelay: '0.2s' }}>
-          Software Developer
+          Senior Backend Engineer
         </h2>
         
         <p className="mt-6 max-w-2xl text-lg text-gray-600 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-          Experienced software developer skilled in Java, Python, and web technologies. 
-          Passionate about creating efficient, scalable solutions.
+          Seasoned Senior Backend Engineer with 5+ years of experience designing, developing, 
+          and securing high-performance backend systems and AI-powered platforms.
         </p>
         
         <div className="mt-8 flex space-x-4 animate-fade-in" style={{ animationDelay: '0.6s' }}>
@@ -47,11 +47,18 @@ const HeroSection = () => {
             GitHub
           </a>
           <a 
-            href="mailto:satyam@example.com" 
+            href="mailto:ksatyam1038@gmail.com" 
             className="bg-white hover:bg-gray-100 text-portfolio-dark border border-gray-300 font-semibold py-2 px-4 rounded-md transition-colors duration-300 flex items-center"
           >
             <Mail size={16} className="mr-2" />
-            Contact
+            Email
+          </a>
+          <a 
+            href="tel:+971509373942" 
+            className="bg-white hover:bg-gray-100 text-portfolio-dark border border-gray-300 font-semibold py-2 px-4 rounded-md transition-colors duration-300 flex items-center"
+          >
+            <Phone size={16} className="mr-2" />
+            Phone
           </a>
         </div>
         

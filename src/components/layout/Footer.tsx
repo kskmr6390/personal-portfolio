@@ -18,7 +18,7 @@ const Footer = () => {
             <h2 className="text-2xl font-bold">
               Satyam<span className="text-portfolio-primary">.dev</span>
             </h2>
-            <p className="mt-2 text-gray-400">Building digital solutions with passion</p>
+            <p className="mt-2 text-gray-400">Senior Backend Engineer | Cloud & AI Solutions</p>
           </div>
           
           <div className="flex flex-wrap justify-center gap-6">

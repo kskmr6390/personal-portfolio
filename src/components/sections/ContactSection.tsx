@@ -11,7 +11,6 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // In a real application, we would send the form data to a backend
     toast({
       title: "Message sent!",
       description: "Thank you for reaching out. I'll get back to you soon.",
@@ -26,7 +25,7 @@ const ContactSection = () => {
         </h2>
         
         <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
-          I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.
+          I'm always open to discussing new projects, innovative ideas, or opportunities to be part of your vision.
         </p>
         
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -39,7 +38,7 @@ const ContactSection = () => {
                 <MapPin size={20} className="mr-3 text-portfolio-primary mt-1" />
                 <div>
                   <h4 className="font-medium text-portfolio-dark">Location</h4>
-                  <p className="text-gray-600 mt-1">Bengaluru, Karnataka, India</p>
+                  <p className="text-gray-600 mt-1">Abu Dhabi, United Arab Emirates</p>
                 </div>
               </div>
               
@@ -47,8 +46,8 @@ const ContactSection = () => {
                 <Mail size={20} className="mr-3 text-portfolio-primary mt-1" />
                 <div>
                   <h4 className="font-medium text-portfolio-dark">Email</h4>
-                  <a href="mailto:satyam@example.com" className="text-portfolio-primary hover:underline mt-1">
-                    satyam@example.com
+                  <a href="mailto:ksatyam1038@gmail.com" className="text-portfolio-primary hover:underline mt-1">
+                    ksatyam1038@gmail.com
                   </a>
                 </div>
               </div>
@@ -57,9 +56,14 @@ const ContactSection = () => {
                 <Phone size={20} className="mr-3 text-portfolio-primary mt-1" />
                 <div>
                   <h4 className="font-medium text-portfolio-dark">Phone</h4>
-                  <a href="tel:+919876543210" className="text-portfolio-primary hover:underline mt-1">
-                    +91 98765 43210
-                  </a>
+                  <div>
+                    <a href="tel:+971509373942" className="text-portfolio-primary hover:underline mt-1 block">
+                      +971 509373942 (UAE)
+                    </a>
+                    <a href="tel:+917397463101" className="text-portfolio-primary hover:underline mt-1 block">
+                      +91 7397463101 (India)
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -84,7 +88,7 @@ const ContactSection = () => {
                   <Github size={20} />
                 </a>
                 <a
-                  href="mailto:satyam@example.com"
+                  href="mailto:ksatyam1038@gmail.com"
                   className="bg-[#EA4335] text-white p-3 rounded-full hover:bg-red-600 transition-colors"
                 >
                   <Mail size={20} />

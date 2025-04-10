@@ -4,33 +4,33 @@ import React from 'react';
 const SkillsSection = () => {
   const skillCategories = [
     {
-      title: "Programming Languages",
+      title: "Languages & Frameworks",
       skills: [
-        { name: "Java", level: 90 },
-        { name: "Python", level: 85 },
-        { name: "JavaScript", level: 80 },
-        { name: "SQL", level: 85 },
-        { name: "HTML/CSS", level: 75 }
-      ]
-    },
-    {
-      title: "Frameworks & Libraries",
-      skills: [
+        { name: "Python", level: 90 },
+        { name: "Java", level: 85 },
+        { name: "FastAPI", level: 90 },
         { name: "Spring Boot", level: 85 },
-        { name: "Django", level: 80 },
-        { name: "React", level: 75 },
-        { name: "Angular", level: 70 },
-        { name: "Express.js", level: 75 }
+        { name: "REST APIs", level: 95 }
       ]
     },
     {
-      title: "Tools & Technologies",
+      title: "Cloud & DevOps",
       skills: [
+        { name: "AWS (EC2, Lambda)", level: 90 },
+        { name: "AWS (SQS, ECS)", level: 85 },
+        { name: "Docker", level: 85 },
+        { name: "CI/CD Pipelines", level: 80 },
+        { name: "CloudWatch", level: 85 }
+      ]
+    },
+    {
+      title: "Databases & Tools",
+      skills: [
+        { name: "PostgreSQL", level: 90 },
+        { name: "MySQL", level: 85 },
+        { name: "DynamoDB", level: 80 },
         { name: "Git", level: 90 },
-        { name: "Docker", level: 80 },
-        { name: "AWS", level: 75 },
-        { name: "Jenkins", level: 70 },
-        { name: "MongoDB", level: 80 }
+        { name: "Jira", level: 85 }
       ]
     }
   ];
@@ -43,7 +43,7 @@ const SkillsSection = () => {
         </h2>
         
         <p className="text-gray-600 text-center max-w-3xl mx-auto mb-12">
-          I've developed a diverse set of skills throughout my career, focusing on both frontend and backend technologies.
+          I've developed a diverse set of skills throughout my career, focusing on backend technologies, cloud solutions, and secure coding practices.
         </p>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -74,8 +74,8 @@ const SkillsSection = () => {
         </div>
         
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          {["Problem Solving", "Team Collaboration", "Agile Methodology", "Code Review", 
-            "System Design", "Unit Testing", "Clean Code", "Documentation"].map((skill, index) => (
+          {["GDPR Compliance", "Secure Coding", "Data Encryption", "Agile/Scrum", 
+            "Stripe Integration", "API Design", "LLM Copilots", "AWS Infrastructure"].map((skill, index) => (
             <div 
               key={index} 
               className="bg-blue-50 py-3 px-4 rounded-lg border border-blue-100 text-portfolio-dark font-medium"
