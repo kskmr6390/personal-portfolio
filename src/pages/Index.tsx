@@ -1,7 +1,7 @@
-
 import React from 'react';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
+import BackgroundPattern from '@/components/layout/BackgroundPattern';
 import HeroSection from '@/components/sections/HeroSection';
 import AboutSection from '@/components/sections/AboutSection';
 import ExperienceSection from '@/components/sections/ExperienceSection';
@@ -11,9 +11,10 @@ import ContactSection from '@/components/sections/ContactSection';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col relative">
+      <BackgroundPattern />
       <Navbar />
-      <main className="flex-grow">
+      <main className="flex-grow relative z-10">
         <HeroSection />
         <AboutSection />
         <ExperienceSection />
