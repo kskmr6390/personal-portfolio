@@ -80,27 +80,6 @@ const EducationSection = () => {
                 </div>
               </div>
             </Card>
-            
-            <div className="grid md:grid-cols-2 gap-6 mt-6">
-              {[
-                {
-                  name: "Developer of the Month (Aug 2023)",
-                  description: "Optimized AWS infrastructure, reducing operational costs"
-                },
-                {
-                  name: "Go Beyond Award",
-                  description: "Recognized for innovation and contributions to Qatalyst"
-                }
-              ].map((achievement, index) => (
-                <div 
-                  key={index} 
-                  className="bg-white p-5 rounded-lg border border-gray-200 hover:shadow-md transition-shadow duration-300"
-                >
-                  <h4 className="font-semibold text-portfolio-primary">{achievement.name}</h4>
-                  <p className="text-gray-600 mt-1">{achievement.description}</p>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </div>
