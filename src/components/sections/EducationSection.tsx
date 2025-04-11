@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { GraduationCap, Calendar, Award } from 'lucide-react';
+import { GraduationCap, Calendar, Award, BookOpen } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 const EducationSection = () => {
@@ -17,6 +18,50 @@ const EducationSection = () => {
       period: "2013 - 2016",
       location: "Ranchi, India",
       description: "Completed undergraduate studies with a focus on information technology fundamentals, programming, and systems analysis."
+    }
+  ];
+
+  const certifications = [
+    {
+      name: "Data Analysis with Python",
+      issuer: "Coursera Course Certificates",
+      issued: "Oct 2018",
+      credentialId: "BGWWDNAJKR6Q",
+      skills: ["Relational Databases"]
+    },
+    {
+      name: "Databases and Sql for Data Science",
+      issuer: "Coursera",
+      issued: "Oct 2018",
+      skills: ["Relational Databases"]
+    },
+    {
+      name: "A Crash Course in Data Science",
+      issuer: "Coursera",
+      issued: "Sep 2018",
+      credentialId: "9CAC4G9LFELC"
+    },
+    {
+      name: "REDHAT CERTIFIED SPECIALIST IN ANSIBLE AUTOMATION",
+      issuer: "Red Hat",
+      issued: "Jun 2018",
+      expired: "Jun 2021",
+      credentialId: "180-113-417"
+    },
+    {
+      name: "RHCSA",
+      issuer: "Red Hat",
+      issued: "Jun 2018",
+      expired: "Jun 2021",
+      credentialId: "180-113-417"
+    },
+    {
+      name: "Data Visualization with Python",
+      issuer: "Coursera Course Certificates"
+    },
+    {
+      name: "Machine Learning With Python",
+      issuer: "Coursera Course Certificates"
     }
   ];
 
@@ -80,6 +125,50 @@ const EducationSection = () => {
                 </div>
               </div>
             </Card>
+          </div>
+        </div>
+        
+        <div className="mt-12 max-w-4xl mx-auto">
+          <h3 className="text-2xl font-bold text-portfolio-dark mb-6 flex items-center">
+            <BookOpen className="mr-2 text-portfolio-primary" size={24} />
+            Certifications
+          </h3>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {certifications.map((cert, index) => (
+              <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                <CardContent className="p-6">
+                  <h4 className="font-semibold text-lg text-portfolio-primary mb-2">{cert.name}</h4>
+                  <div className="flex items-center text-gray-600 mb-2">
+                    <span className="font-medium">{cert.issuer}</span>
+                  </div>
+                  {(cert.issued || cert.expired) && (
+                    <div className="flex items-center text-gray-500 text-sm mb-2">
+                      <Calendar size={14} className="mr-1" />
+                      <span>Issued {cert.issued}</span>
+                      {cert.expired && <span> · Expired {cert.expired}</span>}
+                    </div>
+                  )}
+                  {cert.credentialId && (
+                    <div className="text-gray-500 text-sm mb-2">
+                      Credential ID: {cert.credentialId}
+                    </div>
+                  )}
+                  {cert.skills && cert.skills.length > 0 && (
+                    <div className="mt-2">
+                      <div className="text-gray-600 text-sm font-medium mb-1">Skills:</div>
+                      <div className="flex flex-wrap gap-2">
+                        {cert.skills.map((skill, i) => (
+                          <span key={i} className="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">
+                            {skill}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </div>
